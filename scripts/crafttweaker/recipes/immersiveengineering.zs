@@ -98,63 +98,6 @@ recipes.addShapeless(<immersiveengineering:material:2>, [<immersiveengineering:t
 recipes.removeByRecipeName("immersiveengineering:material/stick_aluminum");
 recipes.addShapeless(<immersiveengineering:material:3>, [<immersiveengineering:tool:0> | <embers:tinker_hammer>, <ore:plateAluminum>]);
 
-# Metal Dust
-
-val dust_conversion as IOreDictEntry[][IItemStack] = {
-  //Format is Output : Input[]
-  <immersiveengineering:metal:9> : [<ore:oreCopper>, <ore:ingotCopper>],
-  <immersiveengineering:metal:10> : [<ore:oreAluminum>, <ore:ingotAluminum>],
-  <immersiveengineering:metal:11> : [<ore:oreLead>, <ore:ingotLead>],
-  <immersiveengineering:metal:12> : [<ore:oreSilver>, <ore:ingotSilver>],
-  <immersiveengineering:metal:13> : [<ore:oreNickel>, <ore:ingotNickel>],
-  <immersiveengineering:metal:14> : [<ore:oreUranium>, <ore:ingotUranium>],
-  <immersiveengineering:metal:18> : [<ore:oreIron>, <ore:ingotIron>],
-  <immersiveengineering:metal:19> : [<ore:oreGold>, <ore:ingotGold>],
-};
-for output in dust_conversion {
-  var ores as IOreDictEntry[] = dust_conversion[output];
-  recipes.addShapeless(output,
-    [<immersiveengineering:tool:0> | <embers:tinker_hammer>, ores[0] | ores[1]]);
-}
-
-val dust_conversion_ingotonly as IOreDictEntry[IItemStack] = {
-  <immersiveengineering:metal:16> : <ore:ingotElectrum>,
-  <immersiveengineering:metal:17> : <ore:ingotSteel>,
-  <immersiveengineering:metal:15> : <ore:ingotConstantan>,
-};
-for output in dust_conversion_ingotonly {
-  var input = dust_conversion_ingotonly[output];
-  recipes.addShapeless(output,
-    [<immersiveengineering:tool:0> | <embers:tinker_hammer>, input]);
-}
-
-# Plates
-
-val plate_conversion as IOreDictEntry[IItemStack] = {
-  <embers:plate_aluminum>: <ore:ingotAluminum>,
-  <embers:plate_bronze>: <ore:ingotBronze>,
-  <embers:plate_copper>: <ore:ingotCopper>,
-  <embers:plate_electrum>: <ore:ingotElectrum>,
-  <embers:plate_gold>: <ore:ingotGold>,
-  <embers:plate_iron>: <ore:ingotIron>,
-  <embers:plate_lead>: <ore:ingotLead>,
-  <embers:plate_nickel>: <ore:ingotNickel>,
-  <embers:plate_silver>: <ore:ingotSilver>,
-  <embers:plate_tin>: <ore:ingotTin>,
-
-  <immersiveengineering:metal:35>: <ore:ingotUranium>,
-  <immersiveengineering:metal:36>: <ore:ingotConstantan>,
-  <immersiveengineering:metal:38>: <ore:ingotSteel>,
-
-  <thaumcraft:plate:0> : <ore:ingotBrass>,
-  <thaumcraft:plate:2> : <ore:ingotThaumium>,
-  <thaumcraft:plate:3> : <ore:ingotVoid>
-};
-for output, input in plate_conversion {
-  recipes.remove(output);
-  recipes.addShapeless(output, [<immersiveengineering:tool:0> | <embers:tinker_hammer>, input, input]);
-}
-
 # CRUSHER
 
 //Control Variables

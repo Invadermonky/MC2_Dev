@@ -11,6 +11,28 @@ for(entry in Metals.allMetals) {
 
 
     //Dust Hammering
+    if(metalMat.dust != null) {
+        def dust = metalMat.dust.item;
+
+        //Ingot Hammering
+        if(metalMat.ingot != null) {
+            def ingot = metalMat.ingot.oreDict;
+            def recipeStr = "ingot_hammering_" + metalStr;
+            crafting.addShapeless(recipeStr, dust, [
+                item('immersiveengineering:tool', 0) | item('embers:tinker_hammer'), ingot
+            ]);
+        }
+
+        //Ore Hammering
+        if(metalMat.ore != null) {
+            def ore = metalMat.ore.oreDict;
+            def recipeStr = "ore_hammering_" + metalStr;
+            crafting.addShapeless(recipeStr, dust, [
+                item('immersiveengineering:tool', 0) | item('embers:tinker_hammer'), ore
+            ]);
+        }
+
+    }
     
 
     //Metal Plates

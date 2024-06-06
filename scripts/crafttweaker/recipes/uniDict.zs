@@ -17,8 +17,5 @@ mods.unidict.api.newShapedRecipeTemplate("gear", 1,
      ["ingot", "ingot", "ingot"],
      ["nugget", "ingot", "nugget"]]);
 
-mods.unidict.api.newShapelessRecipeTemplate("plate", 1,
-    ["blockSheetmetal"]);
-
 mods.unidict.api.newShapelessRecipeTemplate("dust", 9,
     ["lump"]);
