@@ -1,0 +1,68 @@
+#imports
+import mods.immersiveengineering.Thermoelectric;
+import crafttweaker.oredict.IOreDict;
+
+
+mods.ItemStages.stageTooltip("engineering", "Temperature:");
+
+#cold blocks
+	<minecraft:packed_ice>.addTooltip(format.gray("Temperature: 200K"));
+	<minecraft:ice>.addTooltip(format.gray("Temperature: 273K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<biomesoplenty:hard_ice>, 258);
+	<biomesoplenty:hard_ice>.addTooltip(format.gray("Temperature: 258K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<bewitchment:perpetual_ice>, 253);
+	<bewitchment:perpetual_ice>.addTooltip(format.gray("Temperature: 253K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<bewitchment:embittered_bricks>, 253);
+	<bewitchment:embittered_bricks>.addTooltip(format.gray("Temperature: 253K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<bewitchment:embittered_brick_witches_altar>, 253);
+	<bewitchment:embittered_brick_witches_altar>.addTooltip(format.gray("Temperature: 253K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(oreDict.get("blockColdIron"), 121);
+	oreDict.get("blockColdIron").addTooltip(format.gray("Temperature: 121K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<minecraft:snow>, 276);
+	<minecraft:snow>.addTooltip(format.gray("Temperature: 276K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<quark:biome_cobblestone:1>, 274);
+	<quark:biome_cobblestone:1>.addTooltip(format.gray("Temperature: 274K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<quark:biome_brick:1>, 274);
+	<quark:biome_brick:1>.addTooltip(format.gray("Temperature: 274K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:frostburn_ice>, 272);
+	<netherex:frostburn_ice>.addTooltip(format.gray("Temperature: 272K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:icy_netherrack>, 270);
+	<netherex:icy_netherrack>.addTooltip(format.gray("Temperature: 270K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:icy_netherrack_path>, 270);
+	<netherex:icy_netherrack_path>.addTooltip(format.gray("Temperature: 270K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:icy_nether_brick>, 269);
+	<netherex:icy_nether_brick>.addTooltip(format.gray("Temperature: 253K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:rime_block>, 243);
+	<netherex:rime_block>.addTooltip(format.gray("Temperature: 243K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<futuremc:blue_ice>, 154);
+	<futuremc:blue_ice>.addTooltip(format.gray("Temperature: 154K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ebwizardry:crystal_block:2>, 89);
+	<ebwizardry:crystal_block:2>.addTooltip(format.gray("Temperature: 89K"));
+	
+#hot blocks
+	<minecraft:magma>.addTooltip(format.gray("Temperature: 1300K"));
+	<immersiveengineering:storage:5>.addTooltip(format.gray("Temperature: 2000K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ebwizardry:crystal_block:1>, 2600);
+	<ebwizardry:crystal_block:1>.addTooltip(format.gray("Temperature: 2600K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<twilightforest:block_storage:1>, 2300);
+	<twilightforest:block_storage:1>.addTooltip(format.gray("Temperature: 2300K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<futuremc:campfire>, 420);
+	<futuremc:campfire>.addTooltip(format.gray("Temperature: 420K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<cfm:fire_pit_on>, 420);
+	<cfm:fire_pit_on>.addTooltip(format.gray("Temperature: 420K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:fiery_netherrack>, 454);
+	<netherex:fiery_netherrack>.addTooltip(format.gray("Temperature: 454K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:fiery_netherrack_path>, 454);
+	<netherex:fiery_netherrack_path>.addTooltip(format.gray("Temperature: 454K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<netherex:fiery_nether_brick>, 455);
+	<netherex:fiery_nether_brick>.addTooltip(format.gray("Temperature: 455K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<quark:magma_bricks>, 1282);
+	<quark:magma_bricks>.addTooltip(format.gray("Temperature: 1282K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<ceramics:clay_hard:5>, 687);
+	<ceramics:clay_hard:5>.addTooltip(format.gray("Temperature: 687K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(<roots:elemental_soil_fire>, 526);
+	<roots:elemental_soil_fire>.addTooltip(format.gray("Temperature: 526K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(oreDict.get("lavastone"), 679);
+	oreDict.get("lavastone").addTooltip(format.gray("Temperature: 679K"));
+	mods.immersiveengineering.Thermoelectric.addTemperatureSource(oreDict.get("scornedBricks"), 398);
+	oreDict.get("scornedBricks").addTooltip(format.gray("Temperature: 398K"));

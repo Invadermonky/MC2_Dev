@@ -1,0 +1,52 @@
+import crafttweaker.item.IItemStack;
+import crafttweaker.item.IIngredient;
+
+#modloaded astralsorcery
+#modloaded capsule
+#modloaded immersiveengineering
+
+
+# These are all unstable recipes that break something when they are removed. Only use this if you are checking for conflicts.
+
+
+recipes.removeByRecipeName("capsule:recovery");
+recipes.removeByRecipeName("capsule:prefab");
+recipes.removeByRecipeName("capsule:blueprint_change");
+recipes.removeByRecipeName("capsule:blueprint");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-lightningrod");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivetech/it-boiler");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-refinery");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-excavatordemo");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-mixer");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-dieselgenerator");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivepetroleum/ip-pumpjack");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-bottlingmachine");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-autoworkbench");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-sheetmetaltank");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-alloysmelter");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/darkcobble_gate");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnaceadvanced");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-blastfurnace");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/darkcobble_corner");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/darkcobble_corner_tower_top");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/chicken_cooker");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-metalpress");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-assembler");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivetech/it-solarreflector");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-arcfurnace");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivetech/it-alternator");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-crusher");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-fermenter");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/darkcobble_wall");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivetech/it-solartower");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/darkcobble_corner_tower");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersivetech/it-steamturbine");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-squeezer");
+recipes.removeByRecipeName("capsule:config/capsule/prefabs/immersiveengineering/ie-silo");
+
+recipes.removeByRecipeName("immersiveengineering:powerpack");
+recipes.removeByRecipeName("immersiveengineering:bullet_potion");
+recipes.removeByRecipeName("immersiveengineering:potion_flare");
+
+recipes.removeByRecipeName("astralsorcery:recipechangewandcolor");
+
